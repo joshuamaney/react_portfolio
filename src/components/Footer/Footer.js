@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../../images/Resume.pdf"
 import "./style.css"
 
 function Footer() {
@@ -6,7 +7,7 @@ function Footer() {
         <nav class="navbar navbar-light bg-light" className="footer">
             <form class="form-inline">
                 
-                <a href="https://docs.google.com/document/d/1zEHHsR94dFLY3kME3sGDhOF8sNKa5rylqKIpr-LVNdg/edit?usp=sharing"><button className="button" type="button">Resume</button></a>
+                <a href={resume}><button className="button" type="button">Resume</button></a>
 
                 <a href="joshuamaney.github.com"><button className="button" type="button">Github</button></a>
 
