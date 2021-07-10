@@ -9,10 +9,10 @@ class Projects extends Component {
   render() {
     return (
       <div className="container">
-        <h1>Click images to visit the deployed pages!</h1>
+        <h1 style={{textAlign: "center", textDecoration: "underline", color: "pink"}}>Click images to visit the deployed pages!</h1>
       {this.state.projects.map((project) => (
         
-      <div className="card mb-3" style={{ width: "90%" }}>
+      <div className="card mb-3" style={{ borderStyle: "solid", margin: "15px" }}>
         <div className="row">
             <div className="col-md-4">
               <a a href={project.website}>
@@ -25,11 +25,11 @@ class Projects extends Component {
                   ></img>
               </a>
             </div>
-            <div className="col-md-8">
+            <div className="col-md-8" style={{textAlign: "center"}}>
               <div className="card-body">
-                <h5 className="card-title">{project.title}</h5>
+                <h3 className="card-title">{project.title}</h3>
                   <p className="card-text">{project.description} </p>
-                  <p className="card-text">Visit the<a className="a-modal" href={project.repository} target="_blank" rel="noreferrer"> repository</a></p>
+                <p className="card-text">Visit the<a className="a-modal" style={{ color: "pink", textDecoration: "none"}} href={project.repository} target="_blank" rel="noreferrer"> repository</a></p>
               </div>
             </div>
           </div> 
