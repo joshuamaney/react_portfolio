@@ -1,13 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     return (
         <nav class="navbar navbar-light bg-light">
-            <form class="container-fluid justify-content-start">
-                <button class="btn btn-outline-success me-2" type="button">Home</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button">About</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button">Projects</button>
-            </form>
+            <div>
+                <ul className="nav nav-pills">
+                    <li className="nav-item">
+                        <Link to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}>Home</Link>
+                    </li>
+
+                    <li className="nav-item">
+                        <Link to="/Projects" className={window.location.pathname === "/Projects" ? "nav-link active" : "nav-link"}>Projects</Link>
+                    </li>
+          
+                </ul>
+            </div>
         </nav>
     )
 }
