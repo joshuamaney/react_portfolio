@@ -7,8 +7,9 @@ function Navbar() {
         
         <nav class="navbar navbar-light bg-light" className="nav">
             <form class="form-inline">
-                <button className="button" type="button"><Link to="/" className={window.location.pathname === "/"}>Home</Link></button>
-                <button className="button" type="button"><Link to="/Projects" className={window.location.pathname === "/Projects"}>Projects</Link></button>
+                <Link to="/" className={window.location.pathname === "/"}><button className="button" type="button">Home</button></Link>
+                <Link to="/About" className={window.location.pathname === "/About"}><button className="button" type="button">About</button></Link>
+                <Link to="/Projects" className={window.location.pathname === "/Projects"}><button className="button" type="button">Projects</button></Link>
             </form>
         </nav>
     )
