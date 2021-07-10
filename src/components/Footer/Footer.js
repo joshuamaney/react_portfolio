@@ -6,7 +6,7 @@ function Footer() {
         <nav class="navbar navbar-light bg-light" className="footer">
             <form class="form-inline">
                 
-                <a href="https://docs.google.com/document/d/1zEHHsR94dFLY3kME3sGDhOF8sNKa5rylqKIpr-LVNdg/edit"><button className="button" type="button">Resume</button></a>
+                <a href="https://docs.google.com/document/d/1zEHHsR94dFLY3kME3sGDhOF8sNKa5rylqKIpr-LVNdg/edit?usp=sharing"><button className="button" type="button">Resume</button></a>
 
                 <a href="joshuamaney.github.com"><button className="button" type="button">Github</button></a>
 
